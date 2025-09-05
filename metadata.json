@@ -1,0 +1,7 @@
+{
+  "name": "Accountant.ai",
+  "description": "An AI-powered accounting assistant that helps you manage your finances using voice commands and receipt scanning. All data is stored locally in your browser.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

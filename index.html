@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accountant.ai</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4f46e5",
+              secondary: "#111827",
+              "light-gray": "#d1d5db",
+              "dark-gray": "#1f2937",
+              "accent-green": "#10b981",
+              "accent-red": "#ef4444"
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-secondary text-light-gray">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
