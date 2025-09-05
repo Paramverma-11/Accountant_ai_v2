@@ -2,12 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accountant.ai</title>
+    <!-- relative paths for GitHub Pages -->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#4f46e5',
+              'secondary': '#111827',
+              'light-gray': '#d1d5db',
+              'dark-gray': '#1f2937',
+              'accent-green': '#10b981',
+              'accent-red': '#ef4444',
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Import maps -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+        "react/": "https://aistudiocdn.com/react@^19.1.1/",
+        "react": "https://aistudiocdn.com/react@^19.1.1",
+        "uuid": "https://aistudiocdn.com/uuid@^11.1.0"
+      }
+    }
+    </script>
   </head>
-  <body>
+  <body class="bg-secondary text-light-gray">
     <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <!-- fixed: use relative path and correct entry -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
